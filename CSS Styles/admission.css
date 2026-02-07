@@ -1,0 +1,793 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* ---Header---- */
+}
+header{
+    background-color: #183456;
+    width: 100%;
+    direction: rtl;
+    
+    
+}
+header ul{
+    background-color: #0A4F9E;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+   
+}
+header ul li{
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 3px solid #fff;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #2d3e50;
+    text-decoration: underline;
+}
+ /* ---End of Header---- */
+ /* -------Nav------ */
+ nav{
+     background-color: #fff;
+     width: 100%;
+     
+ }
+ nav ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content:flex-end ;
+ }
+ nav ul li{
+     padding-right: 20px;
+     margin: 10px;
+     position: relative;
+ }
+ nav ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background-color: #0A4F9E;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     transition: 0.5s;
+ }
+ nav ul li:hover::after{
+    width: 80%;
+ }
+ nav ul li a{
+     text-decoration: none;
+     font-weight: bold;
+     color: #2d3e50;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+
+ .dropdown-content{
+     width: 100%;
+     /* margin: 5px; */
+     padding: 20px;
+    position:absolute;
+    background:rgb(255, 255, 255,0.6);
+    min-width:300px;
+    box-shadow:1px 3px 3px 1px rgba(221, 221, 221, 0.555);
+    display:none;
+    
+  }
+  .dropdown-content a{
+    display:block;
+  }
+  .dropdown-content a:hover{
+    background:white;
+    color:black;
+  }
+  li:hover .dropdown-content{
+    display:block;
+  }
+  
+  .firstsubmenu{
+    width:50%;
+    float:left;
+    /* padding: 20px; */
+
+  }
+  .firstsubmenu h3{
+      margin-bottom: 10px;
+      border-bottom: 1px solid #909090;
+      color: #2d3e60;
+      /* width: 100%; */
+
+  }
+
+  .secondsubmenu{
+      margin-top: 70px;
+      width:50%;
+      padding: 10px;
+    float:left;
+    /* border-left:1px solid white; */
+  
+  }
+ nav ul li a:hover{
+    color: #2d3e50;
+ }
+ .bi-building{
+     color: #2d3e50;
+     font-size: 2rem;
+     position: relative;
+     top:40px;
+     left: 20px;
+     font-weight: bold;
+     
+ }
+ /* -------End of Nav------ */
+ /* --first-content-back-img-- */
+ .first-content-back-img{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/admission.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 10px;
+    border-bottom: 20px solid #888;
+    object-fit: cover;
+ }
+ 
+.about-student{
+    margin: 30px;
+    padding: 20px;
+}
+
+ /* --End of first-content-back-img-- */
+
+
+ /* --tabs-- */
+
+ .tab1{
+     font-weight: bold;
+     color: #183456;
+     text-decoration: none;
+ }
+ .tab1:hover{
+    text-decoration: underline;
+    color: #183456;
+ }
+ .tab2{
+    font-weight: bold;
+    color: #183456;
+    text-decoration: none;
+}
+.tab2:hover{
+   text-decoration: underline;
+}
+.about-student span i{
+    background-color: #183456;
+    border: none;
+    color: #fff;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+.paragraph-about-students p{
+   margin-top: 30px;
+   color: #888;
+   font-size: 20px;
+}
+.paragraph-about-students h1{
+    border-bottom: 7px solid #183456;
+    width: 20%;
+    margin: 40px auto;
+    /* height: 100%; */
+}
+ /* --End of tabs-- */
+
+ /* --Apply online-- */
+ .apply-online{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    height: 500px;
+    
+ }
+ .apply-online .img {
+     position: relative;
+ }
+ .apply-online .img img{
+     width: 70%;
+     height: 300px;
+     margin: 50px;
+ }
+ .apply-online .img .text{
+     background-color: #fff;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+     position: absolute;
+     top:270px;
+     width: 70%;
+     right:90px;
+     padding: 30px;
+     border-bottom: 5px solid #183456;
+ }
+ .apply-online .img .text a{
+    text-decoration: none;
+    color: #183456;
+    font-weight: bold;
+ }
+ .apply-online .img .text a:hover{
+    text-decoration: underline;
+ }
+ .apply-online .img .text p{
+    color: #4a4c4c;
+    margin: 30px 10px 0 10;
+ }
+ /* --End of Apply online-- */
+ /* --this style button is a global style--- */
+ .btn1{
+    padding: 10px;
+    background-color: #00467f;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 30px 20px 10px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 2px solid #00467f;
+    color: #00467f; 
+}
+ /* - end----this style button is a global style--- */
+
+ /* --video-- */
+ .video{
+    margin: 50px;
+ }
+ /* --End of video-- */
+
+ /* --students achievements-- */
+.students-achievements{
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: #fff;
+    /* margin-top: 20px */
+    /* width: 100%; */
+    /* height: 500px; */
+    margin-bottom: 200px;
+}
+.students-achievements .imgages{
+    padding:20px;
+    position: relative;
+    width: 100%;
+}
+.students-achievements .imgages h4{
+    padding:20px;
+    color: #00467f;
+    cursor: pointer;
+}
+.students-achievements .imgages h4:hover{
+    text-decoration: underline;
+}
+.students-achievements .imgages .btn1{
+    margin-bottom: 10px;
+}
+.students-achievements .imgages img{
+    width: 100%;
+    height: 250px;
+    
+}
+.students-achievements .imgages .text{
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding:20px;
+    position: relative;
+    top:-40px;
+    left: 20px;
+    width: 100%;
+    height: 200px;
+    border-bottom: 5px solid #183456;
+    
+}
+ 
+ /* --End of students achievements-- */
+
+ /* --Academic program-- */
+.academic-program{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    position: relative;
+    height: 500px;
+}
+.academic-program .academic img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    left: 100px;
+    /* margin: 50px 0 0 60px; */
+}
+.academic-program .admission img{
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    right: 50px;
+}
+.academic-program .academic .text{
+background-color: #fff;
+width: 40%;
+height: 250px;
+position: absolute;
+top:180px;
+padding: 20px;
+left: 100px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.academic-program .academic .text h4{
+    color: #183456;
+}
+.academic-program .academic .text p{
+    padding: 10px 10px 10px 0;
+    color: #888;
+}
+.academic-program .academic .text ul{
+    list-style: square;
+    color: #183456;
+}
+.academic-program .academic .text ul li a{
+    color: #00467f;
+}
+
+.academic-program .admission .text{
+    background-color: #fff;
+    width: 40%;
+    position: absolute;
+    top:180px;
+    padding: 20px;
+    right: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.academic-program .admission .text h4{
+    color: #183456;
+}
+.academic-program .admission .text p{
+    padding: 10px 10px 10px 0;
+    color: #888;
+}
+.academic-program .admission .text ul{
+    list-style: square;
+    color: #183456;
+}
+.academic-program .admission .text ul li a{
+    color: #00467f;
+}
+ /* --End of Academic program-- */
+
+
+ /* -- graduation and admission FAQs-- */
+
+
+ .graduation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    height: 500px;
+ }
+ .graduation .graduation-img img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+ }
+ .graduation .graduation-img .text{
+    background-color: #fff;
+    width: 30%;
+    position: absolute;
+    top: 350px;
+    padding: 20px;
+    left: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 170px;
+ }
+ .graduation .admission-faqs img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+ }
+ .graduation .admission-faqs .text{
+    background-color: #fff;
+    width: 30%;
+    position: absolute;
+    top:335px;
+    padding: 20px;
+    right: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    height: 170px;
+ }
+  /* -- End of graduation and admission FAQs-- */
+
+  /* --Students Guide-- */
+
+  .student-guide{
+      background-image: url('../images/slide3.jpeg');
+      background-size: 100% 100%;
+      background-position: center;
+      height: 500px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      object-fit: cover;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .student-guide h2{
+      background-color: #0A4F9E;
+      width: 300px;
+      text-align: center;
+      margin: 40px 50px 0 60px;
+      color: #fff;
+  }
+  .student-guide .text{
+      background-color: #fff;
+      width: 500px;
+      padding: 20px;
+      margin-left: 20px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .student-guide .text h4{
+      color: #183456;
+  }
+  .student-guide .text p{
+      padding: 10px 0 5px 0;
+      color: #888;
+  }
+   /* --End of Students Guide-- */
+
+  /* --Footer-- */
+footer{
+    background-color: #183456;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 80px;
+}
+footer figure img{
+    height: 300px;
+    width: 90%;
+    height: 300px;
+    margin-top: -40px;
+}
+footer figure{
+    width: 100%;
+    background-color: #0a4f9e;
+    margin: 100px 30px 0 30px;
+    height: 100%;
+}
+footer figure figcaption{
+    padding: 40px;
+    
+}
+footer figure figcaption h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+footer figure figcaption h5 a:hover{
+    color: #fff;
+}
+footer .about-uni{
+    margin: 120px 20px 0 30px;
+    color: #fff;
+    width: 600px;
+    /* text-decoration: none; */
+}
+footer .about-uni a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .about-uni h3{
+    border-bottom: 2px solid #fff;
+}
+footer .academics{
+    margin: 100px 30px 0 30px;
+    color: #fff;
+    padding: 20px;
+    line-height: 30px;
+    /* text-decoration: none; */
+}
+footer .academics a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+footer .academics h3{
+    border-bottom: 2px solid #fff;
+}
+footer .social-media ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #00467f;
+    position: absolute;
+    right: 0;
+    top:-40px;
+}
+footer .social-media ul li{
+    padding: 10px;
+}
+footer .social-media ul li a i{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    color: #183456;
+    background-color: #ccc;
+    border-radius: 50%;
+    /* margin: 5px; */
+    /* animation-name: example; */
+    animation-duration: 2s;
+    width: 10%;
+}
+
+   /* --End of Footer-- */
+
+   @media screen and (max-width:600px){
+    header{
+        width: 100%;
+       }
+    header ul{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header ul li, nav ul li{
+        width: 100%;
+    }
+    /* .dropdown:hover .dropdown-content{
+        display: none;
+    } */
+    /* .dropdown-content a:hover{
+        display: none;
+    }  */
+    .bi-building{
+        top: 0;
+    }
+
+    .apply-online{
+        flex-direction: column;
+        margin-top: 200px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .apply-online .img img{
+        width: 100%;
+        /* margin-top: 50px; */
+    }
+    .apply-online .img .text{
+        width: 100%;
+        right:20px;
+    }
+    .apply-online .video iframe{
+        width: 100%;
+        /* margin-bottom: 40px; */
+        margin-top: 100px;
+    }
+
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+        width: 100%;
+        margin-top:150px;
+    }
+    footer figure{
+        width:100%;
+    }
+
+
+    .students-achievements{
+        flex-direction: column;
+        margin-top: 200px;
+        
+    }
+    .students-achievements .imgages{
+        margin-top: 40px;
+    }
+    .academic-program{
+        flex-direction: column;
+    }
+    .academic-program .academic img{
+        width: 100%;
+        height: 100%;
+        margin-top: 300px;
+    }
+
+    .graduation{
+        flex-direction: column;
+        /* margin-top: 0; */
+        /* margin-bottom: 100px; */
+        margin-top: 450px;
+    }
+    .graduation .graduation-img .text{
+        /* background-color: #fff; */
+        width: 60%;
+        position: absolute;
+        top:230px;
+        padding: 20px;
+        left: 70px;
+        box-shadow: 3px 3px 3px 3px #ccc;
+        height: 190px;
+     }
+     .graduation .graduation-img img{
+        width: 90%;
+        height: 200px;
+        /* margin: 50px 0 50px 50px; */
+     }
+
+     .graduation .admission-faqs img{
+        width: 90%;
+        height: 200px;
+        margin-top: 160px;
+        /* margin: 50px 50px 50px 0px; */
+     }
+     .graduation .admission-faqs .text{
+        background-color: #fff;
+        width: 60%;
+        position: absolute;
+        top:600px;
+        padding: 20px;
+        right: 70px;
+        box-shadow: 3px 3px 3px 3px #ccc;
+        height: 170px;
+     }
+     .graduation-img{
+         margin-top: 200px;
+     }
+
+     .student-guide{
+
+        margin-top: 350px;
+        /* background-image: url('./images/slide3.jpeg');
+        background-size: 100% 100%;
+        background-position: center;
+        height: 500px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        position: relative; */
+    }
+    .student-guide h2{
+        background-color: #0A4F9E;
+        width: 300px;
+        text-align: center;
+        margin: 40px 50px 0 60px;
+        color: #fff;
+        position: absolute;
+        top: 160px;
+    }
+    .student-guide .text{
+        background-color: #fff;
+        width: 400px;
+        padding: 20px;
+        margin-left: 20px;
+        height: 250px;
+        position: absolute;
+        top: 230px;
+    }
+    .student-guide .text h4{
+        color: #183456;
+    }
+    .student-guide .text p{
+        padding: 10px 0 5px 0;
+        color: #888;
+    }
+
+
+    .academic-program{
+        display: flex;
+        justify-content: center;
+        background-color: #f2f2f2;
+        position: relative;
+        height: 500px;
+    }
+    .academic-program .academic img{
+        height: 200px;
+        margin-top: 300px;
+         width: 80%;
+       
+        /* margin: 50px 50px 0 60px; */
+    }
+    .academic-program .admission img{
+        margin-top: 300px;
+        /* width: 80%;
+        height: 200px;
+        margin: 50px 50px 0 40px; */
+    }
+    .academic-program .academic .text{
+   
+    width: 60%;
+    position: absolute;
+    top:700px;
+    padding: 20px;
+    left: 100px;
+    }
+    .academic-program .academic .text h4{
+        color: #183456;
+    }
+    .academic-program .academic .text p{
+        padding: 10px 10px 10px 0;
+        color: #888;
+    }
+    .academic-program .academic .text ul{
+        list-style: square;
+        color: #183456;
+    }
+    .academic-program .academic .text ul li a{
+        color: #00467f;
+    }
+    
+    .academic-program .admission .text{
+        width: 70%;
+        position: absolute;
+        top:200px;
+        padding: 20px;
+        right: 50px;
+    
+    }
+    .academic-program .admission .text h4{
+        color: #183456;
+    }
+    .academic-program .admission .text p{
+        padding: 10px 10px 10px 0;
+        color: #888;
+    }
+    .academic-program .admission .text ul{
+        list-style: square;
+        color: #183456;
+    }
+    .academic-program .admission .text ul li a{
+        color: #00467f;
+    }
+    
+    
+
+   }

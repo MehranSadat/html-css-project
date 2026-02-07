@@ -1,0 +1,641 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* ---Header---- */
+}
+header{
+    background-color: #183456;
+    width: 100%;
+    direction: rtl;
+    
+    
+}
+
+header ul{
+    background-color: #0A4F9E;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+   
+}
+header ul li{
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 3px solid #fff;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #2d3e50;
+    text-decoration: underline;
+}
+ /* ---End of Header---- */
+ /* -------Nav------ */
+ nav{
+     background-color: #fff;
+     width: 100%;
+     
+ }
+ nav ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content:flex-end ;
+ }
+ nav ul li{
+     padding-right: 20px;
+     margin: 10px;
+     position: relative;
+ }
+ nav ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background-color: #0A4F9E;
+     position: absolute;
+     left: 0;
+     bottom: -4px;
+     transition: 0.5s;
+ }
+ nav ul li:hover::after{
+    width: 80%;
+ }
+ nav ul li a{
+     text-decoration: none;
+     font-weight: bold;
+     color: #2d3e50;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+
+ .dropdown-content{
+     width: 100%;
+     /* margin: 5px; */
+     padding: 20px;
+    position:absolute;
+    background:rgb(255, 255, 255,0.6);
+    min-width:300px;
+    box-shadow:1px 3px 3px 1px rgba(221, 221, 221, 0.555);
+    display:none;
+    
+  }
+  .dropdown-content a{
+    display:block;
+  }
+  .dropdown-content a:hover{
+    background:white;
+    color:black;
+  }
+  li:hover .dropdown-content{
+    display:block;
+  }
+  
+  .firstsubmenu{
+    width:50%;
+    float:left;
+    /* padding: 20px; */
+
+  }
+  .firstsubmenu h3{
+      margin-bottom: 10px;
+      border-bottom: 1px solid #909090;
+      color: #2d3e60;
+      /* width: 100%; */
+
+  }
+
+  .secondsubmenu{
+      margin-top: 70px;
+      width:50%;
+      padding: 10px;
+    float:left;
+    /* border-left:1px solid white; */
+  
+  }
+ nav ul li a:hover{
+    color: #2d3e50;
+ }
+ .bi-building{
+     color: #2d3e50;
+     font-size: 2rem;
+     position: relative;
+     top:40px;
+     left: 20px;
+     font-weight: bold;
+     
+ }
+ /* -------End of Nav------ */
+
+
+ /* ----Slider----- */
+
+div.slider1{
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/slide-back.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    width: 100%;
+    object-fit: cover;
+}
+
+div.slider1{
+padding:10px;
+}
+div.slider1 .text{
+    display: flex;
+    flex-direction: column;
+    background-color: #1050847e;
+    width: 40%;
+    position: relative;
+    top:250px;
+    height: 230px;
+    right: 20px;
+}
+div.slider1 .text h1{
+    padding:20px 30px 0 20px;
+    color: #fff;
+}
+div.slider1 .text p{
+    color: #fff;
+    padding:0 20px ;
+}
+div.slider1 .text .btn{
+    background-color: #fff;
+    color: #105084;
+    width: 110px;
+    display: block;
+    margin: 0 30px 20px 20px;
+    border-radius: 30px;
+}
+div.slider1 .text .btn:hover{
+    background-color: #1050847e;
+    border:2px solid #183456 ;
+    color: #fff;
+}
+
+
+ /* ----End of Slider----- */
+
+
+ /* ---Quick-search--- */
+ .quick-search{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:15px;
+     margin: 20px;
+ }
+ .quick-search figure img{
+    height: 150px;
+    width: 100%;
+ }
+ /* .quick-search .box h3{
+     padding:20px;
+     color: #2d3e50;
+ } */
+ .quick-search .box{
+     box-shadow: 2px 2px 2px #e7e7e7;
+     /* box-shadow: -2px -2px 2px #e7e7e7; */
+ }
+ .quick-search .box h3 a{
+     text-decoration: none;
+     font-weight: bolder;
+     padding:20px 20px 20px 0;
+     color: #2d3e50;
+ }
+ .quick-search .box h3 a:hover{
+     text-decoration: underline;
+ }
+
+ /* --this style button is a global style--- */
+ .btn1{
+     padding: 10px;
+     background-color: #00467f;
+     border-radius: 30px;
+     text-decoration: none;
+     color: #fff;
+     margin: 20px 30px 20px 10px;
+     font-weight: bold;
+ }
+ .btn1:hover{
+     background-color: transparent;
+     border: 2px solid #00467f;
+     color: #00467f; 
+ }
+  /* - end----this style button is a global style--- */
+ .quick-search .search{
+     background-color: #0A4F9E;
+     height: 250px;
+     width: 100%;
+ }
+ .search h1{
+     color: #fff;
+     padding: 20px 20px 0 20px;
+ }
+ .search p{
+    color: #fff;
+    padding: 0 20px 0 20px;
+ }
+ .search input{
+     padding: 10px ;
+     margin: 0 5px 5px 20px;
+     width: 70%;
+     border: none;
+     outline: none;
+ }
+ .search span i{
+     padding: 10px;
+     border: 1px solid #fff;
+     color: #fff;
+     width: 10%;
+     cursor: pointer;
+ }
+ .quick-search .search .top-question{
+     background-color: #e5e6e3;
+     width: 90%;
+    margin: 20px auto;
+ }
+ .quick-search .search .top-question h2{
+    padding: 20px 20px 0 10px;
+    color: #00467f;
+ }
+ .quick-search .search .top-question ul{
+    color:#00467f ;
+ }
+ .quick-search .search .top-question ul li a{
+     text-decoration: none;
+     color:#00467f ;
+     padding: 20px 20px 30px 20px;
+ }
+ 
+  /* --- End of Quick-search--- */
+
+
+  /* ---student-blog--- */
+.student-blog{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/student-blog.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 600px;
+    width: 100%;
+    border-top: 40px solid #00467f;
+    border-bottom: 40px solid #00467f;
+    position: relative;
+    margin-top: 40px;
+    object-fit: cover;
+}
+.student-blog .student-blog-info{
+position: absolute;
+right: 20px;
+top: 150px;
+bottom: 10px;
+background-color: rgba(255, 255, 255, 0.555);
+width: 40%;
+height: 250px;
+padding: 20px;
+
+}
+.student-blog-info h1 a{
+color: #00467f;
+text-decoration: none;
+}
+.student-blog-info h1 a:hover{
+    text-decoration: #00467f;
+    text-decoration: underline;
+}
+.student-blog-info p{
+    color: #4a4c4c;
+}
+
+
+   /* ---End of student-blog--- */
+
+   /* --Student departments and some of their works--- */
+
+.department{
+    display: flex;
+     justify-content: space-around; 
+     margin: 40px;
+     padding: 20px;
+     
+}
+.department .dep{
+    width: 33.333%;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 15px;
+    margin: 0 10px;
+
+}
+.department .dep figure img{
+    height: 150px;
+    width: 100%;
+}
+.department .dep h5 a{
+color: #00467f;
+text-decoration: none;
+}
+.department .dep h5 a:hover{
+    text-decoration: underline;
+}
+.department .dep p{
+padding:10px
+}
+
+   /* --End of Student departments and some of their works--- */
+
+
+   /* ---Student success center  and Research--- */
+
+   .seccess-center-research{
+       display: flex;
+       justify-content: space-between;
+       padding: 30px;
+       /* margin: 15px; */
+       background-color: #f2f2f2;
+       position: relative;
+   }
+   .seccess-center-research figure .img1{
+    height: 150px;
+    width: 90%;
+    margin: -20px 0 0 0;
+    height: 300px;
+    object-fit: cover;
+   }
+   .seccess-center-research figure .img2{
+    height: 150px;
+    width: 30%;
+    height: 300px;
+    /* margin: -20px 0 0 0; */
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    object-fit: cover;
+   }
+   .seccess-center-research figure{
+       background-color: #00467f;
+       margin: 30px;
+       height: 500px;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   }
+
+   .seccess-center-research figure .figcaption2{
+    padding-top: 300px;
+   }
+      
+
+   .seccess-center-research figure figcaption h4{
+       color: #fff;
+      margin: 20px;
+   }
+   .seccess-center-research figure figcaption h4:hover{
+    text-decoration: underline;
+}
+   .seccess-center-research figure figcaption p{
+    color: #fff;
+   margin: 20px;
+}
+   .seccess-center-research figure figcaption .btn{
+    background-color: #fff;
+    color: #105084;
+    width: 110px;
+    display: block;
+    margin: 0 30px 20px 20px;
+    border-radius: 30px;
+   }
+   .seccess-center-research figure figcaption .btn:hover{
+    background-color: #1050847e;
+    border:2px solid #183456 ;
+    color: #fff;
+    margin: 20px;
+   }
+   /* -- End of Student success center  and Research-- */
+
+
+   /* --Footer-- */
+footer{
+    background-color: #183456;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+footer figure img{
+    height: 300px;
+    width: 90%;
+    height: 300px;
+    margin-top: -40px;
+}
+footer figure{
+    width: 100%;
+    background-color: #0a4f9e;
+    margin: 100px 30px 0 30px;
+    height: 100%;
+}
+footer figure figcaption{
+    padding: 40px;
+    
+}
+footer figure figcaption h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+footer figure figcaption h5 a:hover{
+    color: #fff;
+}
+footer .about-uni{
+    margin: 120px 20px 0 30px;
+    color: #fff;
+    width: 600px;
+    /* text-decoration: none; */
+}
+footer .about-uni a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .about-uni h3{
+    border-bottom: 2px solid #fff;
+}
+footer .academics{
+    margin: 100px 30px 0 30px;
+    color: #fff;
+    padding: 20px;
+    line-height: 30px;
+    /* text-decoration: none; */
+}
+footer .academics a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+footer .academics h3{
+    border-bottom: 2px solid #fff;
+}
+footer .social-media ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #00467f;
+    position: absolute;
+    right: 0;
+    top:-40px;
+}
+footer .social-media ul li{
+    padding: 10px;
+}
+footer .social-media ul li a i{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    color: #183456;
+    background-color: #ccc;
+    border-radius: 50%;
+    /* margin: 5px; */
+    /* animation-name: example; */
+    /* animation-duration: 2s; */
+    width: 10%;
+}
+footer .social-media ul li{
+    transition: transform 3s, opacity 3s;
+}
+footer .social-media ul li:hover{
+    transform:scale(1.2);
+    opacity:0.5;
+}
+/* @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;} */
+/* footer .social-media ul li a i:hover{
+    transform: translateY(-10px);
+} */
+
+
+   /* --End of Footer-- */
+
+
+   @media screen and (max-width:600px) {
+       header{
+        width: 100%;
+       }
+    header ul{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header ul li, nav ul li{
+        width: 100%;
+    }
+    nav ul li{
+        padding: 0;
+        margin: 0;
+    }
+    /* .dropdown:hover .dropdown-content{
+        display: none;
+    } */
+    /* .dropdown-content a:hover{
+        display: none;
+    }  */
+    .bi-building{
+        top: 0;
+    }
+    div.slider1 {
+        height: 300px;
+        top:0;
+        height: 50%;
+        width: 100%;
+        
+    }
+    div.slider1 .text{
+        /* height: 0; */
+        top:-10px;
+        width: 100%;
+    }
+    div.slider1{
+        display:flex;
+        flex-direction: column;
+        /* width: 100%; */
+        padding: 0;
+    }
+
+    .top-question{
+        display: inline-block;
+        height: 200px;
+
+    }
+    .quick-search{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 60px;
+        grid-gap:30px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .quick-search .box{
+        column-gap:50px
+    }
+    .quick-search .search{
+        height: 400px;
+    }
+    .student-blog{
+        width: 100%;
+
+    }
+    .student-blog .student-blog-info{
+        height: 300px;
+        top:100px;
+        width: 50%;
+    }
+
+    .department{
+        flex-direction: column;
+    }
+
+    .department .dep{
+        width: 100%;
+    }
+    .seccess-center-research{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+        width: 100%;
+        margin-top: 100px;
+    }
+    footer figure{
+        width:85%;
+    }
+    footer figure figcaption img{
+        width: 100%;
+    }
+   }

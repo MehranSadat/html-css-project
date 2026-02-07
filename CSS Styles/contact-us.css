@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* ---Header---- */
+}
+header{
+    background-color: #183456;
+    width: 100%;
+    direction: rtl;
+    
+    
+}
+header ul{
+    background-color: #0A4F9E;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+   
+}
+header ul li{
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 3px solid #fff;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #2d3e50;
+    text-decoration: underline;
+}
+ /* ---End of Header---- */
+ /* -------Nav------ */
+ nav{
+     background-color: #fff;
+     width: 100%;
+     
+ }
+ nav ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content:flex-end ;
+ }
+ nav ul li{
+     padding-right: 20px;
+     margin: 10px;
+     position: relative;
+ }
+ nav ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background-color: #0A4F9E;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     transition: 0.5s;
+ }
+ nav ul li:hover::after{
+    width: 80%;
+ }
+ nav ul li a{
+     text-decoration: none;
+     font-weight: bold;
+     color: #2d3e50;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+
+ .dropdown-content{
+     width: 100%;
+     /* margin: 5px; */
+     padding: 20px;
+    position:absolute;
+    background:rgb(255, 255, 255,0.6);
+    min-width:300px;
+    box-shadow:1px 3px 3px 1px rgba(221, 221, 221, 0.555);
+    display:none;
+    
+  }
+  .dropdown-content a{
+    display:block;
+  }
+  .dropdown-content a:hover{
+    background:white;
+    color:black;
+  }
+  li:hover .dropdown-content{
+    display:block;
+  }
+  
+  .firstsubmenu{
+    width:50%;
+    float:left;
+    /* padding: 20px; */
+
+  }
+  .firstsubmenu h3{
+      margin-bottom: 10px;
+      border-bottom: 1px solid #909090;
+      color: #2d3e60;
+      /* width: 100%; */
+
+  }
+
+  .secondsubmenu{
+      margin-top: 70px;
+      width:50%;
+      padding: 10px;
+    float:left;
+    /* border-left:1px solid white; */
+  
+  }
+ nav ul li a:hover{
+    color: #2d3e50;
+ }
+ .bi-building{
+     color: #2d3e50;
+     font-size: 2rem;
+     position: relative;
+     top:40px;
+     left: 20px;
+     font-weight: bold;
+     
+ }
+ /* -------End of Nav------ */
+
+ /* --tabs-- */
+.tabs{
+    margin: 50px;
+}
+ .tab1{
+    font-weight: bold;
+    color: #183456;
+    text-decoration: none;
+}
+.tab1:hover{
+   text-decoration: underline;
+   color: #183456;
+}
+.tab2{
+   font-weight: bold;
+   color: #183456;
+   text-decoration: none;
+}
+.tab2:hover{
+  text-decoration: underline;
+}
+.tabs span i{
+   background-color: #183456;
+   border: none;
+   color: #fff;
+   padding: 0 5px 0 5px;
+   font-size: 20px;
+}
+/* --End of tabs-- */
+
+/* --Contact Us-- */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h1{
+    color: #0A4F9E;
+    font-weight: bolder;
+}
+.contact span{
+    height: 4px;
+    width: 10%;
+    background-color: #0A4F9E;
+}
+/* --End of Contact Us-- */
+
+/* --info-- */
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px;
+    grid-gap:10px
+}
+.info .box{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.info .box i.bi-info-circle-fill,i.bi-bookmark-fill,i.bi-person-fill{
+font-size: 50px;
+color: #4a4c4c;
+}
+.info .box h4,p,address{
+    color: #4a4c4c;
+}
+/* --End of info-- */
+
+
+
+/* --university campus-- */
+
+.campus{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    
+}
+.campus .uni-buildings img{
+    width: 100%;
+    height: 70%;
+    margin: 50px 0 10px 0;
+    padding: 20px;
+}
+.campus .uni-buildings p{
+/* margin-left:20px ; */
+padding-left: 20px;
+}
+
+/* --End of university campus-- */
+
+
+/* --Footer-- */
+footer{
+    background-color: #183456;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+footer figure img{
+    height: 300px;
+    width: 90%;
+    height: 300px;
+    margin-top: -40px;
+}
+footer figure{
+    width: 100%;
+    background-color: #0a4f9e;
+    margin: 100px 30px 0 30px;
+    height: 100%;
+}
+footer figure figcaption{
+    padding: 40px;
+    
+}
+footer figure figcaption h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+footer figure figcaption h5 a:hover{
+    color: #fff;
+}
+footer .about-uni{
+    margin: 120px 20px 0 30px;
+    color: #fff;
+    width: 600px;
+    /* text-decoration: none; */
+}
+footer .about-uni a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .about-uni h3{
+    border-bottom: 2px solid #fff;
+}
+footer .academics{
+    margin: 100px 30px 0 30px;
+    color: #fff;
+    padding: 20px;
+    line-height: 30px;
+    /* text-decoration: none; */
+}
+footer .academics a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+footer .academics h3{
+    border-bottom: 2px solid #fff;
+}
+footer .social-media ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #00467f;
+    position: absolute;
+    right: 0;
+    top:-40px;
+}
+footer .social-media ul li{
+    padding: 10px;
+}
+footer .social-media ul li a i{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    color: #183456;
+    background-color: #ccc;
+    border-radius: 50%;
+    /* margin: 5px; */
+    /* animation-name: example; */
+    /* animation-duration: 2s; */
+    width: 10%;
+}
+footer .social-media ul li{
+    transition: transform 3s, opacity 3s;
+}
+footer .social-media ul li:hover{
+    transform:scale(1.2);
+    opacity:0.5;
+}
+/* @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;} */
+/* footer .social-media ul li a i:hover{
+    transform: translateY(-10px);
+} */
+
+
+   /* --End of Footer-- */
+
+
+   @media screen and (max-width:600px) {
+    header ul{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header ul li, nav ul li{
+        width: 100%;
+    }
+    .dropdown a:hover .dropdown-content{
+        display: none;
+    }
+    .bi-building{
+        top: 0;
+    }
+    div.slider1 {
+        height: 300px;
+        top:0
+        /* height: 100%; */
+    }
+    div.slider1 .text{
+        /* height: 0; */
+        top:-10px;
+        width: 100%;
+    }
+    div.slider1{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .quick-search{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 60px;
+        grid-gap:30px
+    }
+    .quick-search .box{
+        column-gap:50px
+    }
+    .quick-search .search{
+        height: 400px;
+    }
+    .student-blog .student-blog-info{
+        height: 300px;
+        top:100px;
+        width: 50%;
+    }
+
+    .department{
+        flex-direction: column;
+    }
+
+    .department .dep{
+        width: 100%;
+    }
+    .seccess-center-research{
+        flex-direction: column;
+    }
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+    }
+    footer figure{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    header{
+        width: 100%;
+       }
+    header ul{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header ul li, nav ul li{
+        width: 100%;
+    }
+    .dropdown a:hover .dropdown-content{
+        display: none;
+    }
+    .bi-building{
+        top: 0;
+    }
+
+    
+    .info{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .campus{
+        flex-direction: column;
+    }
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+        width: 100%;
+        margin-top: 80px;
+    }
+    footer figure{
+        width:100%;
+    }
+}
+

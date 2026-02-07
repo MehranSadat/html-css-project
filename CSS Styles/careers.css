@@ -1,0 +1,579 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* ---Header---- */
+}
+header{
+    background-color: #183456;
+    width: 100%;
+    direction: rtl;
+    
+    
+}
+header ul{
+    background-color: #0A4F9E;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+   
+}
+header ul li{
+    padding-right: 10px;
+    margin: 10px;
+    border-right: 3px solid #fff;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: #2d3e50;
+    text-decoration: underline;
+}
+ /* ---End of Header---- */
+ /* -------Nav------ */
+ nav{
+     background-color: #fff;
+     width: 100%;
+     
+ }
+ nav ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content:flex-end ;
+ }
+ nav ul li{
+     padding-right: 20px;
+     margin: 10px;
+     position: relative;
+ }
+ nav ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background-color: #0A4F9E;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     transition: 0.5s;
+ }
+ nav ul li:hover::after{
+    width: 80%;
+ }
+ nav ul li a{
+     text-decoration: none;
+     font-weight: bold;
+     color: #2d3e50;
+     text-transform: uppercase;
+     display: inline-block;
+ }
+
+ .dropdown-content{
+     width: 100%;
+     /* margin: 5px; */
+     padding: 20px;
+    position:absolute;
+    background:rgb(255, 255, 255,0.6);
+    min-width:300px;
+    box-shadow:1px 3px 3px 1px rgba(221, 221, 221, 0.555);
+    display:none;
+    
+  }
+  .dropdown-content a{
+    display:block;
+  }
+  .dropdown-content a:hover{
+    background:white;
+    color:black;
+  }
+  li:hover .dropdown-content{
+    display:block;
+  }
+  
+  .firstsubmenu{
+    width:50%;
+    float:left;
+    /* padding: 20px; */
+
+  }
+  .firstsubmenu h3{
+      margin-bottom: 10px;
+      border-bottom: 1px solid #909090;
+      color: #2d3e60;
+      /* width: 100%; */
+
+  }
+
+  .secondsubmenu{
+      margin-top: 70px;
+      width:50%;
+      padding: 10px;
+    float:left;
+    /* border-left:1px solid white; */
+  
+  }
+ nav ul li a:hover{
+    color: #2d3e50;
+ }
+ .bi-building{
+     color: #2d3e50;
+     font-size: 2rem;
+     position: relative;
+     top:40px;
+     left: 20px;
+     font-weight: bold;
+     
+ }
+ /* -------End of Nav------ */
+
+ /* --first-content-back-img-- */
+ .first-content-back-img{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../images/careers.jpeg');
+    background-position: center;
+    background-size: 100% 100%;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 10px;
+    border-bottom: 20px solid #888;
+    object-fit: cover;
+ }
+ 
+.about-student{
+    margin: 30px;
+    padding: 20px;
+}
+
+ /* --End of first-content-back-img-- */
+
+
+ /* --tabs-- */
+
+ .tab1{
+     font-weight: bold;
+     color: #183456;
+     text-decoration: none;
+ }
+ .tab1:hover{
+    text-decoration: underline;
+    color: #183456;
+ }
+ .tab2{
+    font-weight: bold;
+    color: #183456;
+    text-decoration: none;
+}
+.tab2:hover{
+   text-decoration: underline;
+}
+.about-student span i{
+    background-color: #183456;
+    border: none;
+    color: #fff;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+.paragraph-about-students p{
+   margin-top: 30px;
+   color: #888;
+   font-size: 20px;
+}
+.paragraph-about-students h1{
+    border-bottom: 7px solid #183456;
+    width: 20%;
+    margin: 40px auto;
+    /* height: 100%; */
+}
+ /* --End of tabs-- */
+
+ /* --students achievements-- */
+.students-achievements{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    /* margin-top: 20px */
+    /* width: 100%; */
+    height: 500px;
+}
+.students-achievements .imgages{
+    padding:20px;
+    position: relative;
+}
+.students-achievements .imgages h4{
+    padding:20px;
+    color: #00467f;
+    cursor: pointer;
+}
+.students-achievements .imgages h4:hover{
+    text-decoration: underline;
+}
+.students-achievements .imgages .btn1{
+    margin-bottom: 10px;
+}
+.students-achievements .imgages img{
+    width: 100%;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+.students-achievements .imgages .text{
+    background-color: #fff;
+    padding:20px;
+    position: absolute;
+    top:240px;
+    left: 50px;
+    /* width: 100%; */
+    border-bottom: 5px solid #183456;
+    width:70%;
+    height: 200px;
+   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    
+}
+ 
+ /* --End of students achievements-- */
+
+ /* --this style button is a global style--- */
+ .btn1{
+     padding: 10px;
+     background-color: #00467f;
+     border-radius: 30px;
+     text-decoration: none;
+     color: #fff;
+     margin: 20px 30px 20px 10px;
+     font-weight: bold;
+ }
+ .btn1:hover{
+     background-color: transparent;
+     border: 2px solid #00467f;
+     color: #00467f; 
+ }
+  /* - end----this style button is a global style--- */
+
+  /* --current opportunities-- */
+  .curren-opportunities{
+      margin: 70px 0 70px 70px;
+      position: relative;
+      
+  }
+  .curren-opportunities img{
+    width: 70%;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .curren-opportunities div.Empty{
+      width: 30%;
+      height: 200px;
+      background: #0A4F9E;
+      position:absolute;
+      top:265px;
+      right: 355px;
+      /* z-index: -1; */
+  }
+  .curren-opportunities .text{
+      background-color: #f2f2f2;
+      width: 50%;
+      height: 250px;
+      padding:20px;
+      position:absolute;
+      top:0px;
+      right: 100px;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  .curren-opportunities .text h1{
+    color: #00467f;
+  }
+  .curren-opportunities .text p{
+    color: #888;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+    /* --End of current opportunities-- */
+
+    /* --Student departments and some of their works--- */
+
+.department{
+    display: flex;
+    justify-content: space-around; 
+    margin: 40px;
+    padding: 20px;
+     
+}
+.department .dep{
+    width: 33.333%;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 15px;
+    margin: 0 10px;
+
+}
+.department .dep figure img{
+    width: 100%;
+    height: 250px;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+.department .dep h5 a{
+color: #00467f;
+text-decoration: none;
+}
+.department .dep h5 a:hover{
+    text-decoration: underline;
+}
+.department .dep p{
+padding:10px
+}
+.btnn{
+    text-decoration: none;
+    color: #0A4F9E;
+    padding:10px;
+    font-weight: bolder;
+}
+   /* --End of Student departments and some of their works--- */
+
+   /* --Footer-- */
+footer{
+    background-color: #183456;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 80px;
+}
+footer figure img{
+    height: 300px;
+    width: 90%;
+    height: 300px;
+    margin-top: -40px;
+}
+footer figure{
+    width: 100%;
+    background-color: #0a4f9e;
+    margin: 100px 30px 0 30px;
+    height: 100%;
+}
+footer figure figcaption{
+    padding: 40px;
+    
+}
+footer figure figcaption h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+footer figure figcaption h5 a:hover{
+    color: #fff;
+}
+footer .about-uni{
+    margin: 120px 20px 0 30px;
+    color: #fff;
+    width: 600px;
+    /* text-decoration: none; */
+}
+footer .about-uni a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .about-uni h3{
+    border-bottom: 2px solid #fff;
+}
+footer .academics{
+    margin: 100px 30px 0 30px;
+    color: #fff;
+    padding: 20px;
+    line-height: 30px;
+    /* text-decoration: none; */
+}
+footer .academics a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+footer .academics h3{
+    border-bottom: 2px solid #fff;
+}
+footer .social-media ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #00467f;
+    position: absolute;
+    right: 0;
+    top:-40px;
+}
+footer .social-media ul li{
+    padding: 10px;
+}
+footer .social-media ul li a i{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    color: #183456;
+    background-color: #ccc;
+    border-radius: 50%;
+    /* margin: 5px; */
+    /* animation-name: example; */
+    animation-duration: 2s;
+    width: 10%;
+}
+
+
+
+   /* --End of Footer-- */
+
+
+
+   @media screen and (max-width:600px) {
+    header{
+        width: 100%;
+       }
+    header ul{
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    header ul li, nav ul li{
+        width: 100%;
+    }
+    nav ul li{
+        padding: 0;
+        margin: 0;
+    }
+    /* .dropdown:hover .dropdown-content{
+        display: none;
+    } */
+    /* .dropdown-content a:hover{
+        display: none;
+    }  */
+    .bi-building{
+        top: 0;
+    }
+
+    .students-achievements{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .students-achievements .imgages{
+        margin-top: 90px;
+    }
+    .curren-opportunities{
+        margin-top: 500px;
+    };
+    .curren-opportunities div.Empty{
+        top:500px;
+    }
+    .curren-opportunities .text{
+        top:150px;
+        width:300px;
+        height: 200px;
+        left: -50px;
+    }
+
+    .students-achievements{
+        flex-direction: column;
+        margin-top: -400px;
+        background-color: #fff;
+    }
+    .students-achievements .imgages{
+        margin-top: 300px;
+    }
+
+
+    .curren-opportunities{
+        margin: 70px 0 70px 70px;
+        position: relative;
+        margin-top: 1500px;
+        
+    }
+    .curren-opportunities img{
+      width: 70%;
+      position: relative;
+      margin-bottom:350px;
+    }
+
+    .curren-opportunities .text{
+        background-color: #f2f2f2;
+        width: 70%;
+        height: 290px;
+        padding:20px;
+        position:absolute;
+        top:200px;
+        /* right: 400px; */
+    }
+
+
+
+
+    .department{
+        flex-direction: column;
+        margin-top: 1500px;
+         
+    }
+    .department .dep{
+        width: 100%;
+        margin-top: 50px;
+    
+    }
+    .department .dep figure img{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .department .dep h5 a{
+    color: #00467f;
+    text-decoration: none;
+    }
+    .department .dep h5 a:hover{
+        text-decoration: underline;
+    }
+    .department .dep p{
+    padding:10px
+    }
+    .btnn{
+        text-decoration: none;
+        color: #0A4F9E;
+        padding:10px;
+        font-weight: bolder;
+    }
+
+
+
+
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+        width: 100%;
+        margin-top: 100px;
+    }
+    footer figure{
+        width:85%;
+    }
+    footer figure figcaption img{
+        width: 100%;
+    }
+   }

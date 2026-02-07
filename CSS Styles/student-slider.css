@@ -1,0 +1,392 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.animated-img{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    /* animation: zoom-out 3s linear infinite; */
+}
+
+/* @keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+} */
+
+.text-box{
+    width: 600px;
+    position: absolute;
+    top:200px;
+    left: 100px;
+    color: #fff;
+    animation: textup 12s linear infinite;
+    transform:translateY(-100px)
+}
+.text-box h1{
+    margin-bottom: 40px;
+}
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+.text-box span{
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+
+    }
+    100%{
+        transform: translateY(0px);
+        
+    }
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 3s;
+}
+.text-box3{
+    animation-delay: 6s;
+}
+.text-box4{
+    animation-delay: 9s;
+}
+
+
+
+
+ /* --tabs-- */
+
+ .about-student{
+     margin-top:700px;
+     padding: 30px;
+ }
+ .tab1{
+     font-weight: bold;
+     color: #183456;
+     text-decoration: none;
+ }
+ .tab1:hover{
+    text-decoration: underline;
+    color: #183456;
+ }
+ .tab2{
+    font-weight: bold;
+    color: #183456;
+    text-decoration: none;
+}
+.tab2:hover{
+   text-decoration: underline;
+}
+.about-student span i{
+    background-color: #183456;
+    border: none;
+    color: #fff;
+    padding: 0 5px 0 5px;
+    font-size: 20px;
+}
+/* .about-student span i{
+    transition: transform 3s, opacity 3s;
+}
+.about-student span i:hover{
+    transform:scale(1.2);
+    opacity:0.5;
+} */
+.paragraph-about-students p{
+   margin-top: 30px;
+   color: #888;
+   font-size: 20px;
+}
+.paragraph-about-students h1{
+    border-bottom: 7px solid #183456;
+    width: 20%;
+    margin: 40px auto;
+    /* height: 100%; */
+}
+ /* --End of tabs-- */
+
+ /* --students achievements-- */
+.students-achievements{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+}
+.students-achievements .imgages{
+    padding:20px;
+    position: relative;
+}
+.students-achievements .imgages h4{
+    padding:20px;
+    color: #00467f;
+    cursor: pointer;
+}
+.students-achievements .imgages h4:hover{
+    text-decoration: underline;
+}
+.students-achievements .imgages .btn1{
+    margin-bottom: 10px;
+}
+.students-achievements .imgages img{
+    width: 100%;
+    height: 250px;
+    
+}
+.students-achievements .imgages .text{
+    background-color: #fff;
+    padding:20px;
+    position: absolute;
+    top:240px;
+    left: 50px;
+    width: 90%;
+    height: 40%;
+    border-bottom: 5px solid #183456;
+    
+}
+ 
+ /* --End of students achievements-- */
+
+ /* --this style button is a global style--- */
+ .btn1{
+    padding: 10px;
+    background-color: #00467f;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 30px 20px 10px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background-color: transparent;
+    border: 2px solid #00467f;
+    color: #00467f; 
+}
+ /* - end----this style button is a global style--- */
+
+  /* --Footer-- */
+footer{
+    background-color: #183456;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+footer figure img{
+    height: 300px;
+    width: 90%;
+    height: 300px;
+    margin-top: -40px;
+}
+footer figure{
+    width: 100%;
+    background-color: #0a4f9e;
+    margin: 100px 30px 0 30px;
+    height: 100%;
+}
+footer figure figcaption{
+    padding: 40px;
+    
+}
+footer figure figcaption h5 a{
+    color: #fff;
+    text-decoration: none;
+}
+footer figure figcaption h5 a:hover{
+    color: #fff;
+}
+footer .about-uni{
+    margin: 120px 20px 0 30px;
+    color: #fff;
+    width: 600px;
+    /* text-decoration: none; */
+}
+footer .about-uni a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .about-uni h3{
+    border-bottom: 2px solid #fff;
+}
+footer .academics{
+    margin: 100px 30px 0 30px;
+    color: #fff;
+    padding: 20px;
+    line-height: 30px;
+    /* text-decoration: none; */
+}
+footer .academics a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+    
+}
+footer .academics h3{
+    border-bottom: 2px solid #fff;
+}
+footer .social-media ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: #00467f;
+    position: absolute;
+    right: 0;
+    top:-40px;
+}
+footer .social-media ul li{
+    padding: 10px;
+}
+footer .social-media ul li a i{
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    color: #183456;
+    background-color: #ccc;
+    border-radius: 50%;
+    /* margin: 5px; */
+    /* animation-name: example; */
+    animation-duration: 2s;
+    width: 10%;
+}
+/* --end of footer-- */
+
+@media screen and (max-width:600px){
+    .text-box{
+        left: 0px;
+        width: 500px;
+    }
+
+    .students-achievements{
+        flex-direction: column;
+    }
+
+    .students-achievements .imgages{
+        margin-top: 100px;
+    }
+    .about-student{
+        margin-top: 450px;
+    }
+    
+
+    footer .social-media ul{
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction:column;
+        width: 100%;
+        margin-top: 900px;
+    }
+    footer figure{
+        width:100%;
+    }
+   }
+
+
